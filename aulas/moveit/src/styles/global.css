@@ -51,6 +51,15 @@ a {
 }
 
 
+.container {
+    height: 100vh;
+    max-width: 992px ;
+    margin: 0 auto;
+    padding: 2.5rem 2rem; 
+    display: flex;
+    flex-direction: column;
+
+}
 .experience-bar {
     display: flex;
     align-items: center;
@@ -70,3 +79,11 @@ a {
     position: relative;
 
 }
+
+.experience-bar > div > div {
+    height: 4px;
+    border-radius: 4px;
+    background:var(--green);
+
+}
+
