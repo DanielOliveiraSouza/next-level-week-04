@@ -87,3 +87,9 @@ a {
 
 }
 
+span.current-experience {
+    position: absolute;
+    transform:translateX(-50%);
+    top: 12px;
+
+}
