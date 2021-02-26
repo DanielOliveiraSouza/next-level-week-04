@@ -9,7 +9,7 @@ interface CountdownContextData {
     seconds: number;
     hasFinished: boolean;
     isActive: boolean;
-    StartCountdown: ()=> void;
+    startCountdown: ()=> void;
     resetCountDown: ()=> void;
 }
 
@@ -42,7 +42,7 @@ export function CountdownProvider({children}:CountdownProviderProps){
             }
         }
     },[isActive,time])
-    function StartCountdown(){
+    function startCountdown(){
         
         setisActive(true);
     }
@@ -61,7 +61,7 @@ export function CountdownProvider({children}:CountdownProviderProps){
             seconds,
             hasFinished,
             isActive,
-            StartCountdown,
+            startCountdown,
             resetCountDown,
         }}>
             {children}
