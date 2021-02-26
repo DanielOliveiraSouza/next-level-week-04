@@ -8,7 +8,7 @@ import styles  from '../styles/components/Countdown.module.css';
 export function Countdown (){
 
     const {
-        minutes,
+        minutes, 
         seconds,
         hasFinished,
         isActive,
@@ -18,11 +18,6 @@ export function Countdown (){
     } = useContext(CountdownContext);
     const [minuteLeft,minuteRight] = String(minutes).padStart(2,'0').split('');
     const [secondLeft,secondRight] = String(seconds) .padStart(2,'0').split('');
-
- //   console.log(contextData)
-
-
-
 
     return (
         <div>

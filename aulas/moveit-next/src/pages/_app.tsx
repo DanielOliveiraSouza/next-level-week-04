@@ -1,18 +1,12 @@
 import '../styles/global.css'
-
-import  {challengesContext, ChallengesProvider} from '../contexts/ChallengesContext';
 import { useState } from 'react';
 import { CountdownProvider } from '../contexts/CountdownContext';
+import PagesManifestPlugin from 'next/dist/build/webpack/plugins/pages-manifest-plugin';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps}) {
 
- 
   return ( 
-      <ChallengesProvider>
-        <CountdownProvider>
-          <Component {...pageProps} />
-        </CountdownProvider>
-      </ChallengesProvider>
+          <Component {...pageProps} /> 
   )
 }
 
