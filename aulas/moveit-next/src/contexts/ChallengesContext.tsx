@@ -10,7 +10,6 @@ interface Challenge {
     type: 'body' | 'eye';
     description : string;
     amount: number;
-
 }
 interface ChallengesContextData {
     level: number;
@@ -18,7 +17,7 @@ interface ChallengesContextData {
     challengesCompleted: number;
     levelUp: ()=> void;
     startNewChallenge: ()=> void;
-    activeChallenge: object;
+    activeChallenge: Challenge;
 }
 export const challengesContext = createContext({} as ChallengesContextData)
 
@@ -37,6 +36,7 @@ export function ChallengesProvider({children}:ChallengesProviderProps){
        const randomChallengeIndex = Math.floor(Math.random() * challenges.length)
        const challenge = challenges[randomChallengeIndex];
        setActiveChallenge(challenge);
+       //console.log('new challenge')
      
 
 
@@ -48,7 +48,8 @@ export function ChallengesProvider({children}:ChallengesProviderProps){
           currentExperience,
           challengesCompleted,
           levelUp,
-          startNewChallenge 
+          startNewChallenge,
+          activeChallenge
         }}>
           {children}
       </challengesContext.Provider>
