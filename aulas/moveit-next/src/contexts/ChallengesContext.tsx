@@ -2,6 +2,7 @@ import { getCookieParser } from 'next/dist/next-server/server/api-utils';
 import {Children, createContext, ReactNode, useEffect, useState} from 'react';
 import challenges from '../../challenges.json';
 import Cookies from 'js-cookie';
+import { LevelModal } from '../components/LevelUpModal';
 
 
 
@@ -25,6 +26,7 @@ interface ChallengesContextData {
     startNewChallenge: ()=> void;
     resetChallenge:()=> void;
     completedChallenge:()=> void;
+    closeLevelUpModal:()=>void;
     activeChallenge: Challenge;
 }
 export const challengesContext = createContext({} as ChallengesContextData)
@@ -35,6 +37,7 @@ export function ChallengesProvider({children,...rest}:ChallengesProviderProps){
     const [currentExperience, setCurrentExperience]= useState(rest.currentExperience ?? 0) ;
     const [challengesCompleted,setChallengesCompleted]= useState(rest.completedChallenges ?? 0) ;
     const [activeChallenge,setActiveChallenge]=  useState(null); 
+    const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
     
     const experienceNextLevel = Math.pow((level + 1) *4, 2);
 
@@ -51,6 +54,7 @@ export function ChallengesProvider({children,...rest}:ChallengesProviderProps){
 
     function levelUp(){
       setLevel(level+1)
+      setIsLevelUpModalOpen(true);
     }
     
     function startNewChallenge(){
@@ -68,6 +72,10 @@ export function ChallengesProvider({children,...rest}:ChallengesProviderProps){
 
     function resetChallenge(){
         setActiveChallenge(null);
+    }
+
+    function closeLevelUpModal (){
+        setIsLevelUpModalOpen(false);
     }
 
     function completedChallenge(){
@@ -96,9 +104,12 @@ export function ChallengesProvider({children,...rest}:ChallengesProviderProps){
           startNewChallenge,
           resetChallenge ,
           completedChallenge,
-          activeChallenge
+          activeChallenge,
+          closeLevelUpModal,
         }}>
           {children}
+
+        {isLevelUpModalOpen && <LevelModal/>}
       </challengesContext.Provider>
   )
 }
