@@ -19,6 +19,8 @@ export default function Home() {
           <Profile/>
           <CompletedChallenges/>
           <Countdown/>
+        </div>
+        <div>
           <ChallengeBox/>
         </div>
 
