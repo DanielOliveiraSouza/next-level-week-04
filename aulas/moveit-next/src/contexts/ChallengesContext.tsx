@@ -7,6 +7,9 @@ import Cookies from 'js-cookie';
 
 interface ChallengesProviderProps {
     children: ReactNode;
+    level: number;
+    currentExperience: number;
+    completedChallenges: number;
 }
 interface Challenge {
     type: 'body' | 'eye';
@@ -27,7 +30,7 @@ interface ChallengesContextData {
 export const challengesContext = createContext({} as ChallengesContextData)
 
 
-export function ChallengesProvider({children}:ChallengesProviderProps){
+export function ChallengesProvider({children,...rest}:ChallengesProviderProps){
     const [level,setLevel] = useState(1)
     const [currentExperience, setCurrentExperience]= useState(0);
     const [challengesCompleted,setChallengesCompleted]= useState(0);
