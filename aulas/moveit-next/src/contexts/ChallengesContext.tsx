@@ -31,10 +31,10 @@ export const challengesContext = createContext({} as ChallengesContextData)
 
 
 export function ChallengesProvider({children,...rest}:ChallengesProviderProps){
-    const [level,setLevel] = useState(1)
-    const [currentExperience, setCurrentExperience]= useState(0);
-    const [challengesCompleted,setChallengesCompleted]= useState(0);
-    const [activeChallenge,setActiveChallenge]=  useState(null);
+    const [level,setLevel] = useState(rest.level ?? 1)
+    const [currentExperience, setCurrentExperience]= useState(rest.currentExperience ?? 0) ;
+    const [challengesCompleted,setChallengesCompleted]= useState(rest.completedChallenges ?? 0) ;
+    const [activeChallenge,setActiveChallenge]=  useState(null); 
     
     const experienceNextLevel = Math.pow((level + 1) *4, 2);
 
