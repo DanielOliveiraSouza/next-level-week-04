@@ -1,5 +1,7 @@
+import { getCookieParser } from 'next/dist/next-server/server/api-utils';
 import {Children, createContext, ReactNode, useEffect, useState} from 'react';
 import challenges from '../../challenges.json';
+import Cookies from 'js-cookie';
 
 
 
@@ -35,8 +37,14 @@ export function ChallengesProvider({children}:ChallengesProviderProps){
 
     useEffect(() => {
         Notification.requestPermission();
-    },
-    [])
+    },[])
+
+    useEffect( ()=>{
+        Cookies.set('level',level.toString())
+        Cookies.set('currentExperience',currentExperience.toString())
+        Cookies.set('challengesCompleted',challengesCompleted.toString())
+
+    },[level,currentExperience,challengesCompleted])
 
     function levelUp(){
       setLevel(level+1)
