@@ -7,7 +7,7 @@ import { Profile } from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import styles from '../styles/components/Home.module.css'
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className={styles.container}>
       <ExperienceBar/>
@@ -32,7 +32,12 @@ export default function Home() {
 }
 
 export const getServerSideProps = async() => {
-  return {
-    props:{}
+
+  const user = {
+    level: 1,
+    currentExperience:50,
+    challengesCompleted:2,
   }
+
+  return { props:user}
 }
