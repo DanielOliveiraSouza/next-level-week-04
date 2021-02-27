@@ -2,10 +2,11 @@
 <h1 align="center">Projeto Moveit-next - Next Level Week #4</h1>
 
 Um Projeto desenvolvido na Semana *[Next Level Week \#4](https://nextlevelweek.com)* da *[Rocketseat](https://rocketseat.com.br/)*
+Moveit: Faça uma tarefa durante 25 minutos e depois complete um desafio para subir de *level*
 
 Tecnologias usadas
 ---
-Consulte  *[tutorial](https://react-native.rocketseat.dev/)* de instalação feito pela Rocketseat.
+Consulte  *[tutorial](https://www.notion.so/Configura-es-do-ambiente-React-76f2963a042f45b9b9b567a2795945b8/)* de instalação feito pela Rocketseat.
 + Node JS
 + React JS
 + TypeScript
@@ -18,7 +19,7 @@ Link para [layout](https://www.figma.com/file/5PjevQluBnPA65fo5nIJxy/Move.it-1.0
 Getting Started!
 ---
 ```console
-user@pc:~$ # Clonando o projeto com o git!
+user@pc:~$ #Clonando o projeto com o git!
 user@pc:~$ git clone https://github.com/danieloliveirasouza/next-level-week-04
 ```
 
@@ -30,12 +31,11 @@ user@pc:~$ yarn
 user@pc:~$ #Inicialização da aplicação web
 user@pc:~$ yarn dev
 ```
-<!--Desafios
----
-Seguem os desafios propostos  pela **Rocketseat** para levar o Happy para o próximo nível
-[Desafio Moveit-next 2.0]https://github.com/DanielOliveiraSouza/next-level-week-04/tree/main/docs/)
+Desafios
+Seguem os desafios propostos  pela **Rocketseat** para levar o Moveit para o próximo nível
+[Desafio Moveit-next 2.0](https://www.notion.so/Configura-es-do-ambiente-React-76f2963a042f45b9b9b567a2795945b8)
 
-
+<!--a>
 Release Notes
 ---
 Para informaçõs sobre novas funcionalidades  e correções de *bugs* leia as *[Notas de Lançamento](https://github.com/DanielOliveiraSouza/next-level-week-04/tree/main/docs/releases_notes.md)*<br/>
