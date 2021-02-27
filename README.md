@@ -1,7 +1,7 @@
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/DanielOliveiraSouza/next-level-week-04/main/screenshots/captura-01-web-tela-inicial.png"/>
+<img src="https://raw.githubusercontent.com/DanielOliveiraSouza/next-level-week-04/main/screenshots/captura-02-web-tela-novo-desafio.png"/>
 </p>
 
 <h1 align="center">Projeto Moveit-next - Next Level Week #4</h1>
