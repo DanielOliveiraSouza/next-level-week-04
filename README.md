@@ -39,7 +39,7 @@ user@pc:~$ yarn
 user@pc:~$ #Inicialização da aplicação web
 user@pc:~$ yarn dev
 ```
-Deploy
+Deploy 💻️
 ---
 Link do deploy [move.it](https://moveit-danieloliveirasouza.vercel.app)
 
