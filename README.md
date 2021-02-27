@@ -42,7 +42,7 @@ user@pc:~$ yarn dev
 Desafios 🏆️
 ---
 Seguem os desafios propostos  pela **Rocketseat** para levar o Moveit para o próximo nível
-[Desafio Moveit-next 2.0](https://www.notion.so/Configura-es-do-ambiente-React-76f2963a042f45b9b9b567a2795945b8)
+[Desafio Moveit-next 2.0](https://www.figma.com/file/UJNapdZCoUYduE7QvGXzEw/Move.it-2.0-(Copy)?node-id=149854%3A100)
 
 <!--a>
 Release Notes
