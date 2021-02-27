@@ -1,7 +1,14 @@
 
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/DanielOliveiraSouza/next-level-week-04/main/screenshots/captura-01-web-tela-inicial.png"/>
+</p>
+
 <h1 align="center">Projeto Moveit-next - Next Level Week #4</h1>
 
+
 Um Projeto desenvolvido na Semana *[Next Level Week \#4](https://nextlevelweek.com)* da *[Rocketseat](https://rocketseat.com.br/)*
+
 Moveit: Faça uma tarefa durante 25 minutos e depois complete um desafio para subir de *level*
 
 Tecnologias usadas
