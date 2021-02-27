@@ -18,6 +18,7 @@ Link para [layout](https://www.figma.com/file/5PjevQluBnPA65fo5nIJxy/Move.it-1.0
 
 Getting Started!
 ---
+Clone o repositório
 ```console
 user@pc:~$ #Clonando o projeto com o git!
 user@pc:~$ git clone https://github.com/danieloliveirasouza/next-level-week-04
@@ -32,6 +33,7 @@ user@pc:~$ #Inicialização da aplicação web
 user@pc:~$ yarn dev
 ```
 Desafios
+---
 Seguem os desafios propostos  pela **Rocketseat** para levar o Moveit para o próximo nível
 [Desafio Moveit-next 2.0](https://www.notion.so/Configura-es-do-ambiente-React-76f2963a042f45b9b9b567a2795945b8)
 
