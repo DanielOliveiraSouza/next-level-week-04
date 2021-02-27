@@ -39,6 +39,10 @@ user@pc:~$ yarn
 user@pc:~$ #Inicialização da aplicação web
 user@pc:~$ yarn dev
 ```
+Deploy
+---
+Link do deploy [move.it](https://moveit-danieloliveirasouza.vercel.app)
+
 Desafios 🏆️
 ---
 Seguem os desafios propostos  pela **Rocketseat** para levar o Moveit para o próximo nível
